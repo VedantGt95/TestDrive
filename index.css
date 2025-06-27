@@ -1,0 +1,455 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  
+}
+
+html, body {
+  height: 100%;
+}
+
+/*Navbar*/
+nav ul{
+    gap: 20px;
+  
+}
+
+.nav-brand{
+    font-weight: bold;
+}
+
+/*Slider*/
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 550px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.carousel {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-slide {
+  width: 100%;
+  height: 550px;
+  background-size: 100% 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  display: none;
+}
+
+.carousel-slide.active {
+  display: block;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 50%;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.7);
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+
+/*Buy Sell Toggle*/
+.car-tab-wrapper {
+  width: 100%;
+  margin-top: 0; /* or try -20px if needed */
+  padding-top: 0;
+  padding: 20px;
+}
+
+.tab-buttons {
+  display: flex;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 15px 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  background-color: #e0e0e0;
+  color: #333;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.tab-btn.active {
+  background-color: #2a9d8f;
+  color: white;
+  
+}
+
+.tab-btn.active::after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+ 
+}
+
+.tab-btn:nth-child(2).active {
+  background-color: #2a9d8f;
+}
+
+.tab-btn:nth-child(2).active::after {
+  border-top: 12px solid #2a9d8f;
+}
+
+/* Form Box */
+.form-box {
+  background: rgb(0, 0, 0);
+  padding: 25px 20px;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.tab-form {
+  display: none;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.tab-form.active-form {
+  display: flex;
+}
+
+.tab-form select {
+  flex: 1;
+  min-width: 200px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  background: white;
+  appearance: none;
+}
+
+.search-btn {
+  background-color: #2a9d8f;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.tab-form#sell-form .search-btn {
+  background-color: #2a9d8f;
+}
+
+.search-btn:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .tab-form {
+    flex-direction: column;
+  }
+
+  .tab-form select,
+  .search-btn {
+    width: 100%;
+  }
+}
+
+
+
+
+/*The Name with Right side INFO*/
+.information {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+background-color: #212529;
+}
+
+.brand {
+  flex: 1 1 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.brand span:first-child {
+  color: #2A9D8F;
+}
+
+.brand span:last-child {
+  color: #ffffff;
+}
+
+.rightinfo {
+  flex: 2 1 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  text-align: right;
+}
+
+.rightinfo p {
+  margin: 10px 0;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .information {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .rightinfo {
+    text-align: center;
+  }
+}
+
+.select{
+    background-color: black;
+}
+
+
+
+
+/*Brand Cars*/
+.outer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.brand-box {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 25px;
+  max-width: 1200px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.brand-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.brand-scroll-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.brand-scroll {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+}
+
+.brand-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.brand-item {
+  flex: 0 0 auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 12px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  text-align: center;
+  padding: 10px;
+  display: flex;              /* Make it a flex container */
+  flex-direction: column;     /* Stack items vertically */
+  align-items: center;        /* Center horizontally */
+  justify-content: center;    /* Center vertically */
+  transition: transform 0.3s ease;
+}
+
+
+.brand-item:hover {
+  transform: translateY(-5px);
+}
+
+.brand-item img {
+  max-width: 180px;
+  max-height: 180px;
+  margin-bottom: 8px;
+}
+
+.brand-item span {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Scroll Button */
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  border: none;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 1;
+  transition: background 0.3s ease;
+}
+
+.scroll-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.scroll-btn.left {
+  left: 0;
+}
+
+.scroll-btn.right {
+  right: 0;
+}
+                      
+.scroll-btn:hover {
+  background-color: #f0f0f0;
+}
+
+
+/*Car Cards*/
+.car-section-title {
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.car-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  height: auto;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s;
+  
+}
+
+.car-card:hover {
+  transform: translateY(-5px);
+}
+
+.car-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.car-info {
+  padding: 16px;
+}
+
+.car-info h4 {
+  font-size: 16px;
+  margin: 0 0 8px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+
+}
+
+.car-info .details {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.car-info .price {
+  font-size: 18px;
+  color: #000;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.car-info .seller {
+  color:#2a9d8f;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.car-info .location {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 13px;
+  color: #444;
+}
+
+.location::before {
+  content: "📍";
+  margin-right: 5px;
+}
+
+
+/*Testimonials*/
+
+
+ 

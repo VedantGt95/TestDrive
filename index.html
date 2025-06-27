@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Trust Drive</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+      <a class="navbar-brand fw-bold" href="/index.html">
+        <span style="color: #2a9d8f">Trust</span
+        ><span style="color: #ffffff">Drive</span>
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse w-100" id="navbarNav">
+        <div class="d-flex justify-content-center flex-grow-1">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact-us.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link d-flex justify-content-center" href="#">Login</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="carousel-container">
+      <div class="carousel">
+        <div
+          class="carousel-slide active"
+          style="background-image: url('baanner1.png')"
+        ></div>
+        <div
+          class="carousel-slide"
+          style="background-image: url('baanner2.png')"
+        ></div>
+        <div
+          class="carousel-slide"
+          style="background-image: url('baanner3.png')"
+        ></div>
+        <div
+          class="carousel-slide"
+          style="background-image: url('baanner4.png')"
+        ></div>
+      </div>
+      <button class="prev" onclick="prevSlide()">❮</button>
+      <button class="next" onclick="nextSlide()">❯</button>
+    </div>
+
+    <div class="car-tab-wrapper" style="background-color: black">
+      <div class="tab-buttons">
+        <button class="tab-btn active" data-tab="buy">BUY</button>
+        <button class="tab-btn" data-tab="sell">SELL</button>
+      </div>
+
+      <div class="form-box">
+        <form id="buy-form" class="tab-form active-form">
+          <select>
+            <option>Select Model</option>
+          </select>
+          <select>
+            <option>Select Budget</option>
+          </select>
+          <select>
+            <option>Select City</option>
+          </select>
+          <button type="submit" class="search-btn">SEARCH</button>
+        </form>
+
+        <form id="sell-form" class="tab-form">
+          <select>
+            <option>Select Model</option>
+          </select>
+          <select>
+            <option>Model Year</option>
+          </select>
+          <select>
+            <option>Select City</option>
+          </select>
+          <button type="submit" class="search-btn">SUBMIT</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="information">
+      <div class="brand">
+        <p>
+          <span style="color: #2a9d8f">Trust</span
+          ><span style="color: #ffffff">Drive</span>
+        </p>
+      </div>
+
+      <div class="rightinfo">
+        <p>
+          TrustDrive is your trusted partner in pre-owned vehicle solutions,
+          offering rigorously inspected cars backed by our super quality check.
+        </p>
+        <p>
+          With transparent pricing, verified vehicle history, and dedicated
+          customer support, we ensure a smooth, smart, and secure buying
+          experience.
+        </p>
+        <p>
+          Join over 50,000 happy owners who chose the smarter way to drive —
+          only with TrustDrive.
+        </p>
+      </div>
+    </div>
+
+    <div class="outer" style="background-color: black">
+      <div class="brand-box">
+        <h2 class="brand-title">Popular brands</h2>
+
+        <div class="brand-scroll-wrapper hello">
+          <button class="scroll-btn left" onclick="scrollBrandsLeft()">
+            ‹
+          </button>
+          <div class="brand-scroll" id="brandScroll">
+            <div class="brand-item">
+              <img src="/maruti.avif" alt="Maruti" />
+              <span>Maruti</span>
+            </div>
+            <div class="brand-item">
+              <img src="/tata.avif" alt="Tata" />
+              <span>Tata</span>
+            </div>
+            <div class="brand-item">
+              <img src="/kia.avif" alt="Kia" />
+              <span>Kia</span>
+            </div>
+            <div class="brand-item">
+              <img src="/toyota.avif" alt="Toyota" />
+              <span>Toyota</span>
+            </div>
+            <div class="brand-item">
+              <img src="/hyundai.avif" alt="Hyundai" />
+              <span>Hyundai</span>
+            </div>
+            <div class="brand-item">
+              <img src="/mahindra.avif" alt="Mahindra" />
+              <span>Mahindra</span>
+            </div>
+          </div>
+          <button class="scroll-btn right" onclick="scrollBrandsRight()">
+            ›
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    
+    <div class="card-container" style="background-color: #212429;">
+      <h1 class="car-section-title">Weekly Offered Cars</h1>
+      <div class="car-card">
+        <img src="/carsForSale/Celerio 2018 VXI" alt="Car Image" />
+        <div class="car-info">
+          <h4>2018 Maruti Celerio VXI A...</h4>
+          <div class="details">12,000 kms · Petrol · Automatic</div>
+          <div class="price">₹3.90 Lakh</div>
+          <div class="seller">View Seller Details ➤</div>
+          <div class="location">Malad, Mumbai</div>
+        </div>
+      </div>
+
+      <div class="car-card">
+        <img src="/carsForSale/2018 Hyundai.avif" alt="Car Image" />
+        <div class="car-info">
+          <h4>2018 Hyuandai Grand i10 1.2</h4>
+          <div class="details">29,040 kms · Petrol · Automatic</div>
+          <div class="price">₹5.25 Lakh</div>
+          <div class="seller">View Seller Details ➤</div>
+          <div class="location">Mulund East, Mumbai</div>
+        </div>
+      </div>
+
+      <div class="car-card">
+        <img src="/carsForSale/2017 Maruti Ignis.avif" alt="Car Image" />
+        <div class="car-info">
+          <h4>2017 Maruti Ignis 1.2 AMT</h4>
+          <div class="details">47,818 kms · Petrol · Manual</div>
+          <div class="price">₹4.45 Lakh</div>
+          <div class="seller">View Seller Details ➤</div>
+          <div class="location">Kalwa, Thane</div>
+        </div>
+      </div>
+
+      <div class="car-card">
+        <img src="/carsForSale/2019 innova.avif" alt="Car Image" />
+        <div class="car-info">
+          <h4>2019 Toyota Innova Crysta 2.8 GX</h4>
+          <div class="details">1,63,000 kms · Diesel · Automatic</div>
+          <div class="price">₹18.25 Lakh</div>
+          <div class="seller">View Seller Details ➤</div>
+          <div class="location">Vasai, Palghar</div>
+        </div>
+      </div>
+
+      <div class="car-card">
+        <img src="/carsForSale/2022 Kia Seltos.avif" alt="Car Image" />
+        <div class="car-info">
+          <h4>2022 Kia Seltos GTX Plus</h4>
+          <div class="details">29,000 kms · Diesel · Automatic</div>
+          <div class="price">₹16.90 Lakh</div>
+          <div class="seller">View Seller Details ➤</div>
+          <div class="location">Andheri, Mumbai</div>
+        </div>
+      </div>
+
+      <div class="car-card">
+        <img src="/carsForSale/2018 Jeep Compass.avif" alt="Car Image" />
+        <div class="car-info">
+          <h4>2018 Jeep Compass 2.0</h4>
+          <div class="details">56,293 kms · Petrol · Manual</div>
+          <div class="price">₹11.10 Lakh</div>
+          <div class="seller">View Seller Details ➤</div>
+          <div class="location">Ghatkopar, Mumbai</div>
+        </div>
+      </div>
+
+
+      <div class="car-card">
+        <img src="/carsForSale/2020 Toyota Fortuner.avif" alt="Car Image" />
+        <div class="car-info">
+          <h4>2020 Toyota Fortuner 2.8 </h4>
+          <div class="details">42,000 kms · Diesel · Manual</div>
+          <div class="price">₹29.90 Lakh</div>
+          <div class="seller">View Seller Details ➤</div>
+          <div class="location">Borivali, Mumbai</div>
+        </div>
+      </div>
+
+      <div class="car-card">
+        <img src="/carsForSale/2022 Skoda Kushaq.avif" alt="Car Image" />
+        <div class="car-info">
+          <h4>2022 Skoda Kushaq 1.0 TSI</h4>
+          <div class="details">15,205 kms · Petrol · Automatic</div>
+          <div class="price">₹8.90 Lakh</div>
+          <div class="seller">View Seller Details ➤</div>
+          <div class="location">Mahim, Mumbai</div>
+        </div>
+      </div>
+
+      <div class="car-card">
+        <img src="/carsForSale/2019 tata Harrier.avif" alt="Car Image" />
+        <div class="car-info">
+          <h4>2019 Tata Harrier XZ BSIV</h4>
+          <div class="details">43,000 kms · Petrol · Manual</div>
+          <div class="price">₹3.90 Lakh</div>
+          <div class="seller">View Seller Details ➤</div>
+          <div class="location">Borivali, Mumbai</div>
+        </div>
+      </div>
+
+
+      <div class="car-card">
+        <img src="/carsForSale/2016 mahindra scorpio.avif" alt="Car Image" />
+        <div class="car-info">
+          <h4>2016 Mahindra Scorpio S8</h4>
+          <div class="details">37,400 kms · Diesel · Manual</div>
+          <div class="price">₹10.90 Lakh</div>
+          <div class="seller">View Seller Details ➤</div>
+          <div class="location">Andheri, Mumbai</div>
+        </div>
+      </div>
+    </div>
+<hr>
+    <section class="testimonial-container">
+     
+    </section>
+
+
+     
+
+    
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/script.js"></script>
+  </body>
+</html>
