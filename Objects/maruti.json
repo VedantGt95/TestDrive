@@ -1,0 +1,40 @@
+[
+  {
+    "name": "Maruti Suzuki Ertiga",
+    "price": "₹9.3 Lakh",
+    "fuel": "Petrol",
+    "year": "2021",
+    "image": "/Fetch_Cars/ertiga1.jpeg"
+  },
+  {
+    "name": "Maruti Suzuki Swift",
+    "price": "₹6.1 Lakh",
+    "fuel": "Petrol",
+    "year": "2022",
+    "image": "/Fetch_Cars/swift.jpeg"
+  },
+  {
+    "name": "Maruti Suzuki Baleno",
+    "price": "₹7.9 Lakh",
+    "fuel": "Petrol",
+    "year": "2023",
+    "image": "/Fetch_Cars/baleno.jpeg"
+  },
+  {
+    "name": "Maruti Suzuki WagonR",
+    "price": "₹5.6 Lakh",
+    "fuel": "Petrol",
+    "year": "2022",
+    "image": "/Fetch_Cars/wagonr.jpeg"
+  },
+  {
+    "name": "Maruti Suzuki Brezza",
+    "price": "₹8.9 Lakh",
+    "fuel": "Petrol",
+    "year": "2023",
+    "image": "/Fetch_Cars/brezza.jpeg"
+  }
+]
+
+
+

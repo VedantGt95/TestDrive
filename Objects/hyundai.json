@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Hyundai Creta",
+    "price": "₹10.9 Lakh",
+    "fuel": "Petrol",
+    "year": "2023",
+    "image": "/Fetch_Cars/creta.jpeg"
+  },
+  {
+    "name": "Hyundai Venue",
+    "price": "₹7.7 Lakh",
+    "fuel": "Petrol",
+    "year": "2022",
+    "image": "/Fetch_Cars/venue.jpeg"
+  },
+  {
+    "name": "Hyundai Verna",
+    "price": "₹10.4 Lakh",
+    "fuel": "Petrol",
+    "year": "2023",
+    "image": "/Fetch_Cars/verna.jpeg"
+  },
+  {
+    "name": "Hyundai i20",
+    "price": "₹7.2 Lakh",
+    "fuel": "Petrol",
+    "year": "2023",
+    "image": "/Fetch_Cars/i20.jpeg"
+  },
+  {
+    "name": "Hyundai Tucson",
+    "price": "₹28.5 Lakh",
+    "fuel": "Diesel",
+    "year": "2023",
+    "image": "/Fetch_Cars/tucson.jpeg"
+  }
+]

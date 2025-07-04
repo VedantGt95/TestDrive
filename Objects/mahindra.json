@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Mahindra XUV700",
+    "price": "₹14.0 Lakh",
+    "fuel": "Petrol",
+    "year": "2023",
+    "image": "/Fetch_Cars/xuv700.jpeg"
+  },
+  {
+    "name": "Mahindra Scorpio-N",
+    "price": "₹13.5 Lakh",
+    "fuel": "Diesel",
+    "year": "2022",
+    "image": "/Fetch_Cars/scorpio.jpeg"
+  },
+  {
+    "name": "Mahindra Thar",
+    "price": "₹11.3 Lakh",
+    "fuel": "Diesel",
+    "year": "2023",
+    "image": "/Fetch_Cars/thar.jpeg"
+  },
+  {
+    "name": "Mahindra Bolero",
+    "price": "₹9.8 Lakh",
+    "fuel": "Diesel",
+    "year": "2022",
+    "image": "/Fetch_Cars/bolero.jpeg"
+  },
+  {
+    "name": "Mahindra XUV300",
+    "price": "₹8.4 Lakh",
+    "fuel": "Petrol",
+    "year": "2023",
+    "image": "/Fetch_Cars/xuv300.jpeg"
+  }
+]

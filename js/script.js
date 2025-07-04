@@ -60,3 +60,11 @@ function scrollBrandsRight() {
       event.clipboardData.setData('text/plain', 'Content copying is disabled on this page.');
     });
 
+
+document.querySelectorAll(".brandBtn").forEach(btn => {
+  btn.addEventListener("click", function () {
+    let selectedBrand = this.getAttribute("data-brand"); 
+    localStorage.setItem("brand", selectedBrand);
+    window.location.href = "Carpage.html"; 
+  });
+});

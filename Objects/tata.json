@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Tata Nexon",
+    "price": "₹8.1 Lakh",
+    "fuel": "Petrol",
+    "year": "2023",
+    "image": "/Fetch_Cars/nexon.jpeg"
+  },
+  {
+    "name": "Tata Punch",
+    "price": "₹6.0 Lakh",
+    "fuel": "Petrol",
+    "year": "2022",
+    "image": "/Fetch_Cars/punch.jpeg"
+  },
+  {
+    "name": "Tata Altroz",
+    "price": "₹6.6 Lakh",
+    "fuel": "Petrol",
+    "year": "2023",
+    "image": "/Fetch_Cars/altroz.jpeg"
+  },
+  {
+    "name": "Tata Harrier",
+    "price": "₹15.2 Lakh",
+    "fuel": "Diesel",
+    "year": "2022",
+    "image": "/Fetch_Cars/harrier.jpeg"
+  },
+  {
+    "name": "Tata Safari",
+    "price": "₹16.3 Lakh",
+    "fuel": "Diesel",
+    "year": "2023",
+    "image": "/Fetch_Cars/safari.jpeg"
+  }
+]
